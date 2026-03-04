@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "cloudtrail_bucket" {
   bucket = "tejas-cloudtrail-logs-bucket-12345"
-
+  force_destroy = true
   tags = {
     Name        = "cloudtrail-logs"
     Environment = "dev"
